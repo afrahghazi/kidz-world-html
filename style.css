@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS',cursive, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 
+   Flex Utilities
+ */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.center {
+  align-items: center;
+}
+
+/* =======================
+   Navigation Bar
+======================= */
+nav {
+  padding: 15px 50px;
+  background-color:bisque;
+  align-items: center;
+}
+
+nav img {
+  height: 80px;
+}
+
+#cart {
+  align-items: center;
+}
+
+#cart img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+#cart p {
+  font-weight: bold;
+}
+
+/* =======================
+   Header Section
+======================= */
+header {
+  background: linear-gradient(90deg, #ff6185 0%, #ffd04b 100%);
+  padding: 80px 50px;
+  color: white;
+}
+
+header .header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+header h5 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* =======================
+   Section Container
+======================= */
+.section-container {
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+}
+
+/* =======================
+   Section Titles
+======================= */
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* =======================
+   Product Container
+======================= */
+.container {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  background:wheat;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   Images
+======================= */
+.books, .games, .crafts {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* =======================
+   Product Text
+======================= */
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1rem;
+  color:#ff6185;
+  margin-bottom: 10px;
+}
+
+/* =======================
+   Buy Button
+======================= */
+.buy {
+  align-items: center;
+}
+
+.button {
+  background-color: #ff6185;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button h6 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.button img {
+  height: 20px;
+}
+
+/* =======================
+   Footer
+======================= */
+footer {
+  background-color: #ff6185;
+  color: white;
+  padding: 30px 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer img {
+  height: 50px;
+}
+
+
+
+
+
+/* =======================
+   Media Queries
+======================= */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  header {
+    padding: 60px 30px;
+  }
+
+  header .header-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-container {
+    padding: 30px;
+  }
+
+  .container > div {
+    width: 45%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  header .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .section-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  header .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  header h5 {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 5px;
+    font-size: 0.5rem;
+  }
+}
